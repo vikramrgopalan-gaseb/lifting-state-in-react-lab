@@ -1,7 +1,17 @@
 // src/components/IngredientList/IngredientList.jsx
 
 const IngredientList = (props) => {
-  return <ul>// map through props.ingredients</ul>;
+  return <ul className="ingredient-list">
+     {props.ingredients.map((ingredient, index) => (
+        <li 
+          key={index} 
+          style={{ backgroundColor: ingredient.color }}
+        >
+          {ingredient.name}
+          {/* Button to trigger addToBurger in App.jsx */}
+          <button onClick={() => props.addToBurger(ingredient)}>+</button>
+        </li>
+      ))}</ul>;
 };
 
 export default IngredientList;
