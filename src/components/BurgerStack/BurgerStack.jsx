@@ -2,12 +2,10 @@
 
 const BurgerStack = (props) => {
   return <ul className="burger-stack">
-    
-     if ( {props.stack.length === 0 ) (
+      {props.stack.length === 0 ?  (
         <p>No Ingredients</p>
-      )
-      
-      else (
+      ) :
+      (
         props.stack.map((ingredient, index) => (
           <li 
             key={index} 
