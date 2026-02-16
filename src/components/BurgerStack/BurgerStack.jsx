@@ -12,7 +12,7 @@ const BurgerStack = (props) => {
             style={{ backgroundColor: ingredient.color }}
           >
             {ingredient.name}
-            {/* Button to trigger removeFromBurger in App.jsx */}
+            {/* Remove Button */}
             <button onClick={() => props.removeFromBurger(index)}>X</button>
           </li>
         ))

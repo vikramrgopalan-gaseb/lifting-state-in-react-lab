@@ -8,7 +8,7 @@ const IngredientList = (props) => {
           style={{ backgroundColor: ingredient.color }}
         >
           {ingredient.name}
-          {/* Button to trigger addToBurger in App.jsx */}
+          {/* Add Button */}
           <button onClick={() => props.addToBurger(ingredient)}>+</button>
         </li>
       ))}</ul>;
